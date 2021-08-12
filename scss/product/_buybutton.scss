@@ -1,0 +1,31 @@
+.buyButtonGrid{
+    display: flex;
+    justify-content: center; 
+    .buyButton__Box{
+        width: 100%;
+        .buy__Button{
+            width: 100% ;
+            padding: 3%;
+            background-color: $darkerBackground;
+        }
+    }
+}
+@media (min-width: 981px) and (max-width:2400px){
+    .buyButtonGrid{
+    .buyButton__Box{
+        .buy__Button{
+        font-size: 1rem;
+    }
+}
+}
+}
+/*4k*/
+@media (min-width: 2401px) and (max-width:10000px){
+    .buyButtonGrid{
+        .buyButton__Box{
+            .buy__Button{
+            font-size: 2.4rem;
+        }
+    }
+    }
+}

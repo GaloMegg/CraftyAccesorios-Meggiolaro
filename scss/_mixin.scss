@@ -1,0 +1,14 @@
+@mixin link ($fontSizeLink:$fontSizeNav){
+    color: black;
+    text-decoration: none;
+    font-family: $fontFamily;
+    font-size: $fontSizeLink;
+    font-weight: $fontWeight;
+    
+}
+@mixin linkHover {
+    color: rgb(228, 187, 204);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    
+}

@@ -1,0 +1,13 @@
+.flexError{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a{
+        @include link;
+        text-align: center;
+        
+    }
+    a:hover{
+        @include linkHover;
+    }
+}

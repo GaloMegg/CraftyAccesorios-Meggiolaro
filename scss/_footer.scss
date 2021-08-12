@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:$darkerBackground;
+    font-family: $fontFamily;
+    font-size: $fontSizeFooter;
+    font-weight: $fontWeight;
+    position: relative;
+    
+    .footer__linksNav  {
+        @include link ($fontSizeFooter)
+    }
+    .footer__linksNav:hover{
+        @include linkHover
+    }
+}
+/*PC's*/
+@media (min-width: 981px) and (max-width:2400px){
+footer{
+    font-size: 1rem;
+    .footer__linksNav{
+        @include link (1rem)
+    }
+}
+}
+/*4k*/
+@media (min-width: 2401px) and (max-width:10000px){
+    footer{
+        font-size: 1.7rem;
+        .footer__linksNav{
+            @include link(1.7rem)
+        }
+    }
+}

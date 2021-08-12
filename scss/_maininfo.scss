@@ -1,0 +1,45 @@
+.mainInfo {
+    .main__mainInfoFlex{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    position: relative;
+    font-size: $fontSizeInfo;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    background-color: $darkerBackground;
+    padding-bottom: 1%;
+            .main__individualCol{
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: space-around;
+                text-align: center;
+            .main__miniImage{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+                .main__miniImage-Try {
+                width: 80%;
+                }
+            }
+            }
+        }
+}
+    
+
+    /*responsive*/
+    /*pc*/
+    @media (min-width: 981px) and (max-width:2400px){
+        .resizeParagraph{
+                font-size: 1.2rem;
+        }
+    }
+    
+/*4k*/
+@media (min-width: 2401px) and (max-width:10000px){
+    .resizeParagraph{
+            font-size: 2.5rem;
+        
+    }
+}

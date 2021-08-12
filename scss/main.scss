@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*index*/
+@import "variables";
+@import "mixin";
+@import "index";
+@import "header";
+@import "nav";
+@import "landing";
+@import "slogan";
+@import "maininfo";
+@import "carrousel";
+@import "contactform";
+@import "footer";
+@import "queries";
+@import "breadcrumbs";
+
+/*Products*/
+@import "product/product";
+@import "product/productsample";
+@import "product/description";
+@import "product/buybutton";
+@import "product/pslogan";
+
+
+/*Envio*/
+@import "envios/enviosGrid";
+@import "envios/rightleft";
+
+/*whoWeAre*/
+@import "whoarewe/whogrid";
+@import "whoarewe/whoweare";
+@import "whoarewe/landing";
+
+@import "error/error.scss"

@@ -1,0 +1,84 @@
+
+.shippingFlex{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            background-color: $lighterBackground;
+            
+        .shippingRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+            
+            .resizeLeft{
+                width: 50%;
+            }
+            .enviosRight{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 50%;
+                .resizeTitles {
+                font-size: $fontSizeCatchy;
+                font-family: $fontFamily;
+                
+                }
+                div{
+                  .shippingForm{
+                    font-family: $fontFamily;
+                    font-weight: $fontWeight;
+                  }
+                }
+            }
+      }
+}
+.wayOfMap{
+    background-color: $lighterBackground;
+    .enviosRight, .text-focus-in{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .resizeTitles{
+        font-size: $fontSizeCatchy;
+        font-family: $fontFamily;
+        
+    }
+}
+}
+
+  @media (min-width: 981px) and (max-width:2400px){
+    .wayOfMap, .shippingFlex{
+      .enviosRight{
+        .resizeTitles{
+          font-size: 1.8rem;
+        }
+        p{
+  font-size: 1.6rem;
+        }
+        .shippingForm{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+/*4k*/
+@media (min-width: 2401px) and (max-width:10000px){
+  .wayOfMap, .shippingFlex{
+    .enviosRight{
+      .resizeTitles{
+        font-size: 2.5rem;
+      }
+      p{
+font-size: 2rem;
+      }
+      .shippingForm{
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
