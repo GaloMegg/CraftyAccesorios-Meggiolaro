@@ -223,13 +223,13 @@ nav {
       flex-direction: row;
       align-items: flex-start; }
       .mainInfo .main__mainInfoFlex .main__individualCol .main__miniImage .main__miniImage-Try {
-        width: 80%; }
+        width: 70%; }
 
 /*responsive*/
 /*pc*/
 @media (min-width: 981px) and (max-width: 2400px) {
   .resizeParagraph {
-    font-size: 1.2rem; } }
+    font-size: 1.4rem; } }
 
 /*4k*/
 @media (min-width: 2401px) and (max-width: 10000px) {
