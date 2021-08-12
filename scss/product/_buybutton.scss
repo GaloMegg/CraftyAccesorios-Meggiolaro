@@ -1,8 +1,10 @@
 .buyButtonGrid{
     display: flex;
     justify-content: center; 
+    margin: 1%;
     .buyButton__Box{
         width: 100%;
+        
         .buy__Button{
             width: 100% ;
             padding: 3%;

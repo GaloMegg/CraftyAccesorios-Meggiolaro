@@ -470,7 +470,8 @@ footer {
 
 .buyButtonGrid {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 1%; }
   .buyButtonGrid .buyButton__Box {
     width: 100%; }
     .buyButtonGrid .buyButton__Box .buy__Button {
