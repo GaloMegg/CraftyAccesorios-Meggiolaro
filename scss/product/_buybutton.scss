@@ -4,10 +4,10 @@
     margin: 1%;
     .buyButton__Box{
         width: 100%;
-        
         .buy__Button{
             width: 100% ;
             padding: 3%;
+            border-radius: 12px;
             background-color: $darkerBackground;
         }
     }

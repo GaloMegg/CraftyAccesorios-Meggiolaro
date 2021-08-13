@@ -1,23 +1,65 @@
-footer{
+.footer{
+    background: linear-gradient(179deg, #c7abba, #ffffff);
+    background-size: 400% 400%;
+    animation: AnimationName 8s ease infinite;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:$darkerBackground;
+    flex-direction: column;
+    align-items: stretch;
     font-family: $fontFamily;
-    font-size: $fontSizeFooter;
     font-weight: $fontWeight;
     position: relative;
+    text-align: center;
+    flex-wrap: nowrap;
+    margin-top: 0.5%;
+    .flexFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .resizeFooterImages{
+            max-width: 30%;
+            margin: 1px;
+        }
+        .footer__links {
+            padding: 0.5%;
+        .footer__linksNav  {
+            @include link (0.9rem)
+        }
+        .footer__linksNav:hover{
+            @include linkHover
+        }
+    }
+
+}
+    .footer__credits{
+        .footer__linksNav, .footer__credits--text {
+            @include link (0.8rem)
+        }
+        .footer__linksNav:hover{
+            @include linkHover
+        }
+    }
+    .resizeFooter{
+        font-size: 1rem;
+        margin-bottom: 0%;
+    }
+    .footer__copy{
+        .footer__copy--rights{
+            font-size: 0.8rem;
+        }
+    }
     
-    .footer__linksNav  {
-        @include link ($fontSizeFooter)
-    }
-    .footer__linksNav:hover{
-        @include linkHover
-    }
+    
+}
+
+
+@keyframes AnimationName {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
 }
 /*PC's*/
 @media (min-width: 981px) and (max-width:2400px){
-footer{
+.footer{
     font-size: 1rem;
     .footer__linksNav{
         @include link (1rem)
