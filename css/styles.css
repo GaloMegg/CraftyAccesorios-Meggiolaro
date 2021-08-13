@@ -299,7 +299,8 @@ nav {
     font-weight: bold;
     display: flex;
     align-items: center;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-around; }
   .contact .fieldSet .whappImage {
     height: 20%;
     width: 20%; }
@@ -362,12 +363,12 @@ nav {
 /*PC's*/
 @media (min-width: 981px) and (max-width: 2400px) {
   .contact .fieldSet h3, .contact .fieldSet .shadow-drop-2-center {
-    font-size: 1.1rem; } }
+    font-size: 1.3rem; } }
 
 /*4k*/
 @media (min-width: 2401px) and (max-width: 10000px) {
   .contact .fieldSet h3, .contact .fieldSet .shadow-drop-2-center {
-    font-size: 2rem; } }
+    font-size: 3rem; } }
 
 .footer {
   background: linear-gradient(179deg, #c7abba, #ffffff);
@@ -724,6 +725,16 @@ nav {
     font-family: "Martel", serif;
     font-weight: bold;
     text-align: center; }
+
+.contactFormW {
+  display: flex;
+  width: 100%; }
+  .contactFormW .fieldSet {
+    width: 100%; }
+  .contactFormW .contactRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
 
 @media (min-width: 981px) and (max-width: 2400px) {
   .whoWeAre .whoWeAre__text {

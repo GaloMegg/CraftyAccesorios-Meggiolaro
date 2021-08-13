@@ -95,20 +95,27 @@
         </article>
         <!-- FinishMainInfo -->
         <!-- contactForm -->
-        <article class="contact contactForm">
+        <article class="contact contactForm contactFormW">
             <Form class="fieldSet">
                 <h3 class="headerForm">Deja que te contactemos</h3>
-                <fieldset>
+                <fieldset class="contactRow">
+                    <div>
                     <label for="nombre" class="shadow-drop-2-center">Nombre:</label>
-                    <input name="nombre" id="nombre" type="Text" class="shadow-drop-2-center" required>
                     <label for="apellido" class="shadow-drop-2-center">Apellido:</label>
-                    <input name="apellido" id="apellido" type="Text" class="shadow-drop-2-center" required>
                     <label for="telefono" class="shadow-drop-2-center">Numero de telefono:</label>
-                    <input name="telefono" id="telefono" type="number" class="shadow-drop-2-center" required>
                     <label for="email" class="shadow-drop-2-center">Email:</label>
-                    <input name="email" type="email" id="email" required class="shadow-drop-2-center">
-                    <input type="submit" width="10%" class="shadow-drop-2-center">
-                    <input type="reset" name="" id="" class="shadow-drop-2-center">
+                </div>
+                    <div>
+                        <input name="nombre" id="nombre" type="Text" class="shadow-drop-2-center" required>
+                        <input name="apellido" id="apellido" type="Text" class="shadow-drop-2-center" required>
+                        <input name="telefono" id="telefono" type="number" class="shadow-drop-2-center" required>
+                        <input name="email" type="email" id="email" required class="shadow-drop-2-center">
+                        <div class="contactButtons">
+                            <input type="submit" class="buttonForm shadow-drop-2-center">
+                            <input type="reset" class="buttonForm shadow-drop-2-center">
+                        </div>
+                    </div>
+                    
                     </select>
                 </fieldset>
             </Form>

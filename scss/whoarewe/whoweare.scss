@@ -11,6 +11,19 @@
     
 }
 }
+.contactFormW{
+    display: flex;
+
+    width: 100%;
+    .fieldSet{
+        width: 100%;
+    }
+    .contactRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
 
 @media (min-width: 981px) and (max-width:2400px){
     .whoWeAre{

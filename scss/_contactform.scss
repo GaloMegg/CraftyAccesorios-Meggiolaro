@@ -24,6 +24,7 @@
             display: flex;
             align-items: center;
             flex-direction: row;
+            justify-content: space-around;
             }
             .whappImage{
                 height: 20%;
@@ -105,7 +106,7 @@
 .contact{
     .fieldSet{
         h3, .shadow-drop-2-center{
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
     }
 }
@@ -115,7 +116,7 @@
     .contact{
         .fieldSet{
             h3, .shadow-drop-2-center{
-                font-size: 2rem;
+                font-size: 3rem;
             }
         }
     }
