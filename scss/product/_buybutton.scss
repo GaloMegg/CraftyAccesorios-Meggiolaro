@@ -6,15 +6,18 @@
         width: 100%;
         .buy__Button{
             width: 100% ;
-            padding: 3%;
+            padding: 2%;
             border-radius: 12px;
-            background-color: $darkerBackground;
+            background-color: $lighterBackground;
+            font-family: $buttonFont;
+            font-size: $fontSizeInfo;
         }
     }
 }
 @media (min-width: 981px) and (max-width:2400px){
     .buyButtonGrid{
     .buyButton__Box{
+        width:40%;
         .buy__Button{
         font-size: 1rem;
     }

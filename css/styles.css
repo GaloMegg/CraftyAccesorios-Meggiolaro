@@ -382,8 +382,7 @@ nav {
   font-weight: bold;
   position: relative;
   text-align: center;
-  flex-wrap: nowrap;
-  margin-top: 0.5%; }
+  flex-wrap: nowrap; }
   .footer .flexFooter {
     display: flex;
     flex-direction: row;
@@ -471,7 +470,7 @@ nav {
   justify-content: center;
   width: 100%;
   border-top: 1px solid black;
-  background-color: #e4bbcc; }
+  background-color: #c7abba; }
   .breadCrumbs .breadCrumbs__list {
     display: flex;
     justify-content: space-around;
@@ -591,13 +590,17 @@ nav {
     width: 100%; }
     .buyButtonGrid .buyButton__Box .buy__Button {
       width: 100%;
-      padding: 3%;
+      padding: 2%;
       border-radius: 12px;
-      background-color: #c7abba; }
+      background-color: #e4bbcc;
+      font-family: "Playfair Display", serif;
+      font-size: 1rem; }
 
 @media (min-width: 981px) and (max-width: 2400px) {
-  .buyButtonGrid .buyButton__Box .buy__Button {
-    font-size: 1rem; } }
+  .buyButtonGrid .buyButton__Box {
+    width: 40%; }
+    .buyButtonGrid .buyButton__Box .buy__Button {
+      font-size: 1rem; } }
 
 /*4k*/
 @media (min-width: 2401px) and (max-width: 10000px) {
