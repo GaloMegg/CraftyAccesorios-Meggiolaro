@@ -22,7 +22,7 @@
         .footer__links {
             padding: 0.5%;
         .footer__linksNav  {
-            @include link (0.9rem)
+            @include link (1.2rem)
         }
         .footer__linksNav:hover{
             @include linkHover
@@ -39,12 +39,12 @@
         }
     }
     .resizeFooter{
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 0%;
     }
     .footer__copy{
         .footer__copy--rights{
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
     }
     
@@ -62,16 +62,34 @@
 .footer{
     font-size: 1rem;
     .footer__linksNav{
-        @include link (1rem)
+        @include link (2rem)
     }
 }
+
 }
 /*4k*/
 @media (min-width: 2401px) and (max-width:10000px){
-    footer{
-        font-size: 1.7rem;
+    .footer{
+        .flexFooter{
         .footer__linksNav{
-            @include link(1.7rem)
+            @include link(3rem)
+        }
+        .footer__credits{
+            .footer__linksNav, .footer__credits--text {
+                @include link (2rem)
+            }
+            .footer__linksNav:hover{
+                @include linkHover
+            }
+        }
+        .resizeFooter{
+            font-size: 2rem;
+            margin-bottom: 0%;
+        }
+        .footer__copy{
+            .footer__copy--rights{
+                font-size: 1.8rem;
+            }
         }
     }
-}
+}}

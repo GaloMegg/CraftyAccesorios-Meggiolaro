@@ -1,8 +1,10 @@
 .content{
+    width: 100%;
     .content__landingSection{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: stretch;
+        width: 100%;
         
         }
         .content__landingImage-A{

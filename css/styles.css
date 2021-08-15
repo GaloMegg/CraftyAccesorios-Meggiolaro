@@ -199,16 +199,17 @@ nav {
       font-size: 2rem;
       font-weight: bold; } }
 
-.content .content__landingSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.content .content__landingImage-A {
+.content {
   width: 100%; }
-
-.content .content__landingImage-B {
-  width: 100%; }
+  .content .content__landingSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 100%; }
+  .content .content__landingImage-A {
+    width: 100%; }
+  .content .content__landingImage-B {
+    width: 100%; }
 
 .slogan .slogan__catchyPhrase {
   display: flex;
@@ -396,7 +397,7 @@ nav {
         color: black;
         text-decoration: none;
         font-family: "Martel", serif;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         font-weight: bold; }
       .footer .flexFooter .footer__links .footer__linksNav:hover {
         color: #e4bbcc;
@@ -413,10 +414,10 @@ nav {
     border-bottom: 1px solid black;
     border-top: 1px solid black; }
   .footer .resizeFooter {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0%; }
   .footer .footer__copy .footer__copy--rights {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
 
 @keyframes AnimationName {
   0% {
@@ -434,19 +435,32 @@ nav {
       color: black;
       text-decoration: none;
       font-family: "Martel", serif;
-      font-size: 1rem;
+      font-size: 2rem;
       font-weight: bold; } }
 
 /*4k*/
 @media (min-width: 2401px) and (max-width: 10000px) {
-  footer {
-    font-size: 1.7rem; }
-    footer .footer__linksNav {
-      color: black;
-      text-decoration: none;
-      font-family: "Martel", serif;
-      font-size: 1.7rem;
-      font-weight: bold; } }
+  .footer .flexFooter .footer__linksNav {
+    color: black;
+    text-decoration: none;
+    font-family: "Martel", serif;
+    font-size: 3rem;
+    font-weight: bold; }
+  .footer .flexFooter .footer__credits .footer__linksNav, .footer .flexFooter .footer__credits .footer__credits--text {
+    color: black;
+    text-decoration: none;
+    font-family: "Martel", serif;
+    font-size: 2rem;
+    font-weight: bold; }
+  .footer .flexFooter .footer__credits .footer__linksNav:hover {
+    color: #e4bbcc;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black; }
+  .footer .flexFooter .resizeFooter {
+    font-size: 2rem;
+    margin-bottom: 0%; }
+  .footer .flexFooter .footer__copy .footer__copy--rights {
+    font-size: 1.8rem; } }
 
 /*tablets*/
 /*PC's*/
@@ -745,10 +759,13 @@ nav {
   .whoWeAre .whoWeAre__text {
     font-size: 2rem; } }
 
-.whoarewe .content__landingSection--icon {
-  width: 30%;
-  height: 30%;
-  position: inherit; }
+.whoarewe .content__landingSection {
+  display: flex;
+  justify-content: center; }
+  .whoarewe .content__landingSection .content__landingSection--icon {
+    width: 30%;
+    height: 30%;
+    position: inherit; }
 
 .flexError {
   display: flex;
