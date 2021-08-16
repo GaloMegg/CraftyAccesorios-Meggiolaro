@@ -1,4 +1,5 @@
 Crafty Accesorios
+
 Este proyecto surge en base a una idea pre-existente, dada la situacion mundial actual hubo una necesidad de adaptarse al ambito online.
 
 Comenzando 🚀
