@@ -505,7 +505,7 @@ nav {
     margin-inline-end: 0px;
     padding-inline-start: 0px;
     list-style-type: none;
-    width: 100%; }
+    width: 99%; }
     .breadCrumbs .breadCrumbs__list .breadCrumbs__list--item {
       list-style: none;
       padding: 1%;
@@ -551,14 +551,14 @@ nav {
 .productGrid {
   display: grid;
   grid-template-areas: " nav       nav      nav " " content content content" "slogan   slogan   slogan" "mainInfo mainInfo mainInfo" " buybutton buybutton buybutton" "breadCrumbs breadCrumbs breadCrumbs"  " footer   footer  footer";
-  width: 100vw; }
+  width: 100%; }
   .productGrid .nave {
     grid-area: nav; }
   .productGrid .content {
     grid-area: content; }
   .productGrid .slogan {
     grid-area: slogan; }
-  .productGrid .mainInfo {
+  .productGrid .mainInfoProd {
     grid-area: mainInfo; }
   .productGrid .buyButtonGrid {
     grid-area: buybutton; }
@@ -594,7 +594,10 @@ nav {
       width: 33.3333%; } }
 
 .description {
-  background-color: white; }
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%; }
   .description .description__text {
     font-size: 0.8rem;
     font-family: "Martel", serif;
@@ -655,7 +658,8 @@ nav {
 .slogan .slogan__ProductClass {
   font-size: 1.2rem;
   font-family: "Martel", serif;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 @media (min-width: 981px) and (max-width: 2400px) {
   .slogan .slogan__ProductClass {
