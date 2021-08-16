@@ -13,10 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <!-- globalCss -->
-    <link rel="icon" href="../images/craftyaccslogo .ico">
-
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/craftyaccslogo .ico">
 </head>
 
 <body>
@@ -98,29 +100,25 @@
         <!-- FinishMainInfo -->
         <!-- contactForm -->
         <article class="contact contactForm contactFormW">
-            <Form class="fieldSet">
+            <form class="fieldSet">
                 <h3 class="headerForm">Deja que te contactemos</h3>
                 <fieldset class="contactRow">
                     <div>
                         <label for="nombre" class="shadow-drop-2-center">Nombre:</label>
-                        <label for="apellido" class="shadow-drop-2-center">Apellido:</label>
-                        <label for="telefono" class="shadow-drop-2-center">Numero de telefono:</label>
-                        <label for="email" class="shadow-drop-2-center">Email:</label>
-                    </div>
-                    <div>
                         <input name="nombre" id="nombre" type="Text" class="shadow-drop-2-center" required>
+                        <label for="apellido" class="shadow-drop-2-center">Apellido:</label>
                         <input name="apellido" id="apellido" type="Text" class="shadow-drop-2-center" required>
+                        <label for="telefono" class="shadow-drop-2-center">Numero de telefono:</label>
                         <input name="telefono" id="telefono" type="number" class="shadow-drop-2-center" required>
+                        <label for="email" class="shadow-drop-2-center">Email:</label>
                         <input name="email" type="email" id="email" required class="shadow-drop-2-center">
                         <div class="contactButtons">
-                            <input type="submit" class="buttonForm shadow-drop-2-center">
-                            <input type="reset" class="buttonForm shadow-drop-2-center">
+                            <input type="submit" class="buttonForm ">
+                            <input type="reset" class="buttonForm ">
                         </div>
                     </div>
-
-                    </select>
                 </fieldset>
-            </Form>
+            </form>
         </article>
         <!-- finishContactForm -->
         <!-- breadCrumbs -->
@@ -135,24 +133,26 @@
         <!-- footer -->
         <footer class="footer">
             <div class="flexFooter ">
-                <div class="footer__links">
+                <div class="footer__padding">
                     <div>
                         <p class="resizeFooter">Nuestras redes:</p>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/craftyaccs/" alt="inicio"
-                            class=" footer__linksNav">Facebook</a>
-                    </div>
-                    <div>
                         <a href="https://www.instagram.com/craftyaccs/" class="footer__linksNav">Instagram</a>
                     </div>
-
+                    <div>
+                        <a href="https://pin.it/2ZP8ilo" alt="inicio" class=" footer__linksNav">Pinterest</a>
+                    </div>
+            
+                    <div>
+                        <a href="https://fb.me/CraftyAccesorios" alt="inicio" class=" footer__linksNav">Facebook</a>
+                    </div>
                     <div>
                         <a href="https://drive.google.com/drive/folders/1sOr6qRwOu9E6YdlU5yvvu4AbYi4vKfU7?usp=sharing"
                             class=" footer__linksNav"> Catalogo completo </a>
                     </div>
                 </div>
-                <div class="footer__think">
+                <div class="footer__padding">
                     <div>
                         <p class="resizeFooter">"Big mistake. </p>
                     </div>
@@ -164,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="footer__links">
+                <div class="footer__padding">
                     <div>
                         <p class="resizeFooter">Links Utiles:</p>
                     </div>
@@ -172,7 +172,7 @@
                         <a href="../index.html" alt="inicio" class=" footer__linksNav">Productos</a>
                     </div>
                     <div>
-                        <a href="../whoarewe/quienessomos.html" class="footer__linksNav">¿Quienes somos?</a>
+                        <a href="quienessomos.html" class="footer__linksNav">¿Quienes somos?</a>
                     </div>
                     <div>
                         <a href="../index.html#jumpToCatchy" class=" footer__linksNav">Contacto</a>
@@ -184,17 +184,18 @@
 
                 </div>
             </div>
+            <div class="footer__copy">
+                <div class="footer__copy--rights">
+                    <p>Crafty © 2020 - 2029</p>
+                </div>
+            </div>
             <div class="footer__credits">
                 <div>
                     <p class="footer__credits--text">Developed by: <a href="https://www.twitter.com/Wtscrackin/"
                             class="footer__linksNav">Galo Meggiolaro</a></p>
                 </div>
             </div>
-            <div class="footer__copy">
-                <div class="footer__copy--rights">
-                    <p>Crafty © 2020 - 2029</p>
-                </div>
-            </div>
+
         </footer>
         <!-- finishFooter -->
     </main>

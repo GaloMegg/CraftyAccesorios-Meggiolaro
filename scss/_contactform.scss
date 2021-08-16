@@ -11,6 +11,7 @@
             -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
+        
         h3{
             text-align: center;
             font-size: $fontSizeContact;
@@ -25,6 +26,10 @@
             align-items: center;
             flex-direction: row;
             justify-content: space-around;
+            
+            &:focus{-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
             }
             .whappImage{
                 height: 20%;
@@ -34,9 +39,10 @@
                 display: flex;
                 flex-direction: row;
             .buttonForm{
-                width: 50%;
-                background-color: $lighterBackground;
-                border: none;
+                @include buttonForm;
+                font-size: $fontSizeContactForm;
+            font-family: $buttonFont;
+
             }
         }
         }

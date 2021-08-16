@@ -1,5 +1,5 @@
 .enviosGrid {
-    grid-template-areas: "nav nav nav nav" "info info info info" "wayOfMap wayOfMap wayOfMap wayOfMap"  "breadCrumbs breadCrumbs breadCrumbs breadCrumbs" "footer footer footer footer";
+    grid-template-areas: "nav nav nav nav" "info info info info"  "breadCrumbs breadCrumbs breadCrumbs breadCrumbs" "footer footer footer footer";
 
 .nave {
     grid-area: nav;
@@ -7,9 +7,6 @@
 .infoShp {
     grid-area: info;
 } 
-.wayOfMap {
-    grid-area: wayOfMap;
-}
 .breadCrumbs{
     grid-area: breadCrumbs;
 }

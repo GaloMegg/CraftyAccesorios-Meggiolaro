@@ -4,11 +4,10 @@
     margin: 1%;
     .buyButton__Box{
         width: 100%;
+        display: flex;
+        justify-content: center;
         .buy__Button{
-            width: 100% ;
-            padding: 2%;
-            border-radius: 12px;
-            background-color: $lighterBackground;
+            @include buttonForm;
             font-family: $buttonFont;
             font-size: $fontSizeInfo;
         }
@@ -19,7 +18,7 @@
     .buyButton__Box{
         width:40%;
         .buy__Button{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 }

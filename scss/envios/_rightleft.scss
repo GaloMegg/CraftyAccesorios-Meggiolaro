@@ -12,7 +12,8 @@
             justify-content: stretch;
             
             .resizeLeft{
-                width: 50%;
+              width: 50%;
+            }
             }
             .enviosRight{
                 display: flex;
@@ -29,11 +30,15 @@
                 div{
                   .shippingForm{
                     font-family: $fontFamily;
-                    font-weight: $fontWeight;
+                    
+                  }
+                  .buttonForm{
+                    @include buttonForm ($darkerBackground);
+                    font-family:$buttonFont;
                   }
                 }
             }
-      }
+      
 }
 .wayOfMap{
     background-color: $lighterBackground;

@@ -8,11 +8,7 @@
         .breadCrumbs__list{
             display: flex;
             justify-content: space-around;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 0px;
+            @include nolist;
             list-style-type: none;
             width: 100%;
                 .breadCrumbs__list--item{
@@ -30,14 +26,18 @@
         }
     }
 }
+/*pc*/
 @media (min-width: 981px) and (max-width:2400px){
     .breadCrumbs{
-    .breadCrumbs__list{
-        .breadCrumbs__list--item{
-        font-size: 0.9rem;
+        .breadCrumbs__list{
+            .breadCrumbs__list--item{
+            font-size: 1.2rem;
+            a{
+                @include link(1.2rem);
+            }
+        }
     }
-}
-}
+    }
 }
 /*4k*/
 @media (min-width: 2401px) and (max-width:10000px){
@@ -47,10 +47,6 @@
             font-size: 2rem;
             a{
                 @include link(2rem);
-
-            }
-            a:hover{
-                @include linkHover;
             }
         }
     }

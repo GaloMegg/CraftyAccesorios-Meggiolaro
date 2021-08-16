@@ -302,6 +302,9 @@ nav {
     align-items: center;
     flex-direction: row;
     justify-content: space-around; }
+    .contact .fieldSet .shadow-drop-2-center:focus {
+      -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .contact .fieldSet .whappImage {
     height: 20%;
     width: 20%; }
@@ -311,7 +314,17 @@ nav {
     .contact .fieldSet .contactButtons .buttonForm {
       width: 50%;
       background-color: #e4bbcc;
-      border: none; }
+      border: 0.5px solid black;
+      border-radius: 16px;
+      height: 8vh;
+      margin: 1%;
+      font-size: 0.9rem;
+      font-family: "Playfair Display", serif; }
+      .contact .fieldSet .contactButtons .buttonForm:hover {
+        background-color: #c7abba;
+        box-shadow: 0px 15px 20px #e4bbcc;
+        color: #fff;
+        transform: translateY(-6px); }
 
 @-webkit-keyframes shadow-drop-2-center {
   0% {
@@ -374,7 +387,7 @@ nav {
 .footer {
   background: linear-gradient(179deg, #c7abba, #ffffff);
   background-size: 400% 400%;
-  animation: AnimationName 8s ease infinite;
+  animation: AnimationName 7s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -387,36 +400,31 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-    .footer .flexFooter .resizeFooterImages {
-      max-width: 30%;
-      margin: 1px; }
-    .footer .flexFooter .footer__links {
+    .footer .flexFooter .footer__padding {
       padding: 0.5%; }
-      .footer .flexFooter .footer__links .footer__linksNav {
+      .footer .flexFooter .footer__padding .resizeFooter {
+        font-size: 0.9rem;
+        margin-bottom: 0%; }
+      .footer .flexFooter .footer__padding .footer__linksNav {
         color: black;
         text-decoration: none;
         font-family: "Martel", serif;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         font-weight: bold; }
-      .footer .flexFooter .footer__links .footer__linksNav:hover {
+      .footer .flexFooter .footer__padding .footer__linksNav:hover {
         color: #e4bbcc;
         border-bottom: 1px solid black;
         border-top: 1px solid black; }
-  .footer .footer__credits .footer__linksNav, .footer .footer__credits .footer__credits--text {
-    color: black;
-    text-decoration: none;
-    font-family: "Martel", serif;
-    font-size: 0.8rem;
-    font-weight: bold; }
-  .footer .footer__credits .footer__linksNav:hover {
-    color: #e4bbcc;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black; }
-  .footer .resizeFooter {
-    font-size: 1.2rem;
-    margin-bottom: 0%; }
   .footer .footer__copy .footer__copy--rights {
     font-size: 1rem; }
+  .footer .footer__credits .footer__credits--text {
+    font-size: 0.7rem; }
+    .footer .footer__credits .footer__credits--text .footer__linksNav {
+      color: black;
+      text-decoration: none;
+      font-family: "Martel", serif;
+      font-size: 0.7rem;
+      font-weight: bold; }
 
 @keyframes AnimationName {
   0% {
@@ -428,38 +436,55 @@ nav {
 
 /*PC's*/
 @media (min-width: 981px) and (max-width: 2400px) {
-  .footer {
+  .footer .flexFooter .footer__padding .resizeFooter {
+    font-size: 1.1rem;
+    margin-bottom: 0%; }
+  .footer .flexFooter .footer__padding .footer__linksNav {
+    color: black;
+    text-decoration: none;
+    font-family: "Martel", serif;
+    font-size: 0.9rem;
+    font-weight: bold; }
+  .footer .flexFooter .footer__padding .footer__linksNav:hover {
+    color: #e4bbcc;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black; }
+  .footer .footer__copy .footer__copy--rights {
     font-size: 1rem; }
-    .footer .footer__linksNav {
+  .footer .footer__credits .footer__credits--text {
+    font-size: 0.7rem; }
+    .footer .footer__credits .footer__credits--text .footer__linksNav {
       color: black;
       text-decoration: none;
       font-family: "Martel", serif;
-      font-size: 2rem;
+      font-size: 0.7rem;
       font-weight: bold; } }
 
 /*4k*/
 @media (min-width: 2401px) and (max-width: 10000px) {
-  .footer .flexFooter .footer__linksNav {
-    color: black;
-    text-decoration: none;
-    font-family: "Martel", serif;
-    font-size: 3rem;
-    font-weight: bold; }
-  .footer .flexFooter .footer__credits .footer__linksNav, .footer .flexFooter .footer__credits .footer__credits--text {
+  .footer .flexFooter .footer__padding .resizeFooter {
+    font-size: 2rem;
+    margin-bottom: 0%; }
+  .footer .flexFooter .footer__padding .footer__linksNav {
     color: black;
     text-decoration: none;
     font-family: "Martel", serif;
     font-size: 2rem;
     font-weight: bold; }
-  .footer .flexFooter .footer__credits .footer__linksNav:hover {
+  .footer .flexFooter .footer__padding .footer__linksNav:hover {
     color: #e4bbcc;
     border-bottom: 1px solid black;
     border-top: 1px solid black; }
-  .footer .flexFooter .resizeFooter {
-    font-size: 2rem;
-    margin-bottom: 0%; }
-  .footer .flexFooter .footer__copy .footer__copy--rights {
-    font-size: 1.8rem; } }
+  .footer .footer__copy .footer__copy--rights {
+    font-size: 1.5rem; }
+  .footer .footer__credits .footer__credits--text {
+    font-size: 1.4rem; }
+    .footer .footer__credits .footer__credits--text .footer__linksNav {
+      color: black;
+      text-decoration: none;
+      font-family: "Martel", serif;
+      font-size: 1.4rem;
+      font-weight: bold; } }
 
 /*tablets*/
 /*PC's*/
@@ -500,9 +525,16 @@ nav {
         border-bottom: 1px solid black;
         border-top: 1px solid black; }
 
+/*pc*/
 @media (min-width: 981px) and (max-width: 2400px) {
   .breadCrumbs .breadCrumbs__list .breadCrumbs__list--item {
-    font-size: 0.9rem; } }
+    font-size: 1.2rem; }
+    .breadCrumbs .breadCrumbs__list .breadCrumbs__list--item a {
+      color: black;
+      text-decoration: none;
+      font-family: "Martel", serif;
+      font-size: 1.2rem;
+      font-weight: bold; } }
 
 /*4k*/
 @media (min-width: 2401px) and (max-width: 10000px) {
@@ -513,11 +545,7 @@ nav {
       text-decoration: none;
       font-family: "Martel", serif;
       font-size: 2rem;
-      font-weight: bold; }
-    .breadCrumbs .breadCrumbs__list .breadCrumbs__list--item a:hover {
-      color: #e4bbcc;
-      border-bottom: 1px solid black;
-      border-top: 1px solid black; } }
+      font-weight: bold; } }
 
 /*Products*/
 .productGrid {
@@ -587,20 +615,29 @@ nav {
   justify-content: center;
   margin: 1%; }
   .buyButtonGrid .buyButton__Box {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    justify-content: center; }
     .buyButtonGrid .buyButton__Box .buy__Button {
-      width: 100%;
-      padding: 2%;
-      border-radius: 12px;
+      width: 50%;
       background-color: #e4bbcc;
+      border: 0.5px solid black;
+      border-radius: 16px;
+      height: 8vh;
+      margin: 1%;
       font-family: "Playfair Display", serif;
       font-size: 1rem; }
+      .buyButtonGrid .buyButton__Box .buy__Button:hover {
+        background-color: #c7abba;
+        box-shadow: 0px 15px 20px #e4bbcc;
+        color: #fff;
+        transform: translateY(-6px); }
 
 @media (min-width: 981px) and (max-width: 2400px) {
   .buyButtonGrid .buyButton__Box {
     width: 40%; }
     .buyButtonGrid .buyButton__Box .buy__Button {
-      font-size: 1rem; } }
+      font-size: 1.3rem; } }
 
 /*4k*/
 @media (min-width: 2401px) and (max-width: 10000px) {
@@ -631,13 +668,11 @@ nav {
 
 /*Envio*/
 .enviosGrid {
-  grid-template-areas: "nav nav nav nav" "info info info info" "wayOfMap wayOfMap wayOfMap wayOfMap"  "breadCrumbs breadCrumbs breadCrumbs breadCrumbs" "footer footer footer footer"; }
+  grid-template-areas: "nav nav nav nav" "info info info info"  "breadCrumbs breadCrumbs breadCrumbs breadCrumbs" "footer footer footer footer"; }
   .enviosGrid .nave {
     grid-area: nav; }
   .enviosGrid .infoShp {
     grid-area: info; }
-  .enviosGrid .wayOfMap {
-    grid-area: wayOfMap; }
   .enviosGrid .breadCrumbs {
     grid-area: breadCrumbs; }
   .enviosGrid .footer {
@@ -663,19 +698,31 @@ nav {
     justify-content: stretch; }
     .shippingFlex .shippingRow .resizeLeft {
       width: 50%; }
-    .shippingFlex .shippingRow .enviosRight {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 50%; }
-      .shippingFlex .shippingRow .enviosRight .resizeTitles {
-        font-size: 1.2rem;
-        font-family: "Martel", serif; }
-      .shippingFlex .shippingRow .enviosRight div .shippingForm {
-        font-family: "Martel", serif;
-        font-weight: bold; }
+  .shippingFlex .enviosRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%; }
+    .shippingFlex .enviosRight .resizeTitles {
+      font-size: 1.2rem;
+      font-family: "Martel", serif; }
+    .shippingFlex .enviosRight div .shippingForm {
+      font-family: "Martel", serif; }
+    .shippingFlex .enviosRight div .buttonForm {
+      width: 50%;
+      background-color: #c7abba;
+      border: 0.5px solid black;
+      border-radius: 16px;
+      height: 8vh;
+      margin: 1%;
+      font-family: "Playfair Display", serif; }
+      .shippingFlex .enviosRight div .buttonForm:hover {
+        background-color: #c7abba;
+        box-shadow: 0px 15px 20px #c7abba;
+        color: #fff;
+        transform: translateY(-6px); }
 
 .wayOfMap {
   background-color: #e4bbcc; }
@@ -751,7 +798,22 @@ nav {
   .contactFormW .contactRow {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-around;
+    border: none; }
+    .contactFormW .contactRow .contactButtons .buttonForm {
+      width: 50%;
+      background-color: #e4bbcc;
+      border: 0.5px solid black;
+      border-radius: 16px;
+      height: 8vh;
+      margin: 1%;
+      font-size: 0.9rem;
+      font-family: "Playfair Display", serif; }
+      .contactFormW .contactRow .contactButtons .buttonForm:hover {
+        background-color: #c7abba;
+        box-shadow: 0px 15px 20px #e4bbcc;
+        color: #fff;
+        transform: translateY(-6px); }
 
 @media (min-width: 981px) and (max-width: 2400px) {
   .whoWeAre .whoWeAre__text {
