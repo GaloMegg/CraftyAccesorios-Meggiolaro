@@ -847,6 +847,8 @@ nav {
     font-size: 0.9rem;
     font-weight: bold;
     text-align: center; }
+    .flexError a .slogan {
+      color: #c7abba; }
   .flexError a:hover {
     color: #e4bbcc;
     border-bottom: 1px solid black;

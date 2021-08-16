@@ -5,7 +5,9 @@
     a{
         @include link;
         text-align: center;
-        
+        .slogan{
+            color:$darkerBackground;
+        }
     }
     a:hover{
         @include linkHover;
