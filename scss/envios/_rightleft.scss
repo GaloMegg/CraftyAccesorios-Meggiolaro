@@ -8,11 +8,27 @@
             
         .shippingRow{
             display: flex;
-            flex-direction: row;
-            justify-content: stretch;
+            justify-content: center;
             
+            .resizeLeftMap{
+              width: 50%;
+              
+              .map{
+                width: 100%;
+                height: 100%;
+              }
+            }
             .resizeLeft{
               width: 50%;
+              background-image: url("../shipping/images/enviosencaba.jpg");
+              background-size: cover;
+              background-position-y: 11%;
+            }
+            .resizeLeftbottom{
+              width: 50%;
+              background-image: url("../shipping/images/restodeargentina.jpg");
+              background-size: cover;
+              background-position-y: 11%;
             }
             }
             .enviosRight{
@@ -21,7 +37,8 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                width: 50%;
+                max-width: 50%;
+                padding: 1%;
                 .resizeTitles {
                 font-size: $fontSizeCatchy;
                 font-family: $fontFamily;
@@ -30,6 +47,7 @@
                 div{
                   .shippingForm{
                     font-family: $fontFamily;
+                    width: 40%;
                     
                   }
                   .buttonForm{
@@ -39,22 +57,9 @@
                 }
             }
       
-}
-.wayOfMap{
-    background-color: $lighterBackground;
-    .enviosRight, .text-focus-in{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        .resizeTitles{
-        font-size: $fontSizeCatchy;
-        font-family: $fontFamily;
+          }
         
-    }
-}
-}
+
 
   @media (min-width: 981px) and (max-width:2400px){
     .wayOfMap, .shippingFlex{

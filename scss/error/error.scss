@@ -5,11 +5,14 @@
     a{
         @include link;
         text-align: center;
-        .slogan{
-            color:$darkerBackground;
+        
+        .errorRedirection{
+            
+                color:$darkerBackground;
+        
         }
     }
     a:hover{
-        @include linkHover;
+        text-decoration: none;
     }
 }

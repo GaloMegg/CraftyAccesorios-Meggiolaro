@@ -8,6 +8,7 @@ nav{
     font-size: $fontSizeNav;
     font-weight: $fontWeight;
     margin-top: 1%;
+    text-align: center;
     .hoverNav:hover .absoluteNav{
         display: block;
         position: absolute;
