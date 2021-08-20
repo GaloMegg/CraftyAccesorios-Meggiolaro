@@ -1,7 +1,6 @@
 .mainInfo {
     .main__mainInfoFlex{
     display: flex;
-    flex-direction: row; 
     justify-content: space-around;
     position: relative;
     font-size: $fontSizeInfo;
@@ -17,7 +16,6 @@
                 text-align: center;
             .main__miniImage{
             display: flex;
-            flex-direction: row;
             align-items: flex-start;
                 .main__miniImage-Try {
                 width: 70%;
