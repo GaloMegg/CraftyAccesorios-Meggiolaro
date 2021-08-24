@@ -8,8 +8,7 @@
         justify-content: center;
         .buy__Button{
             @include buttonForm;
-            font-family: $buttonFont;
-            font-size: $fontSizeInfo;
+            
         }
     }
 }

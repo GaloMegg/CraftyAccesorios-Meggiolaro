@@ -292,8 +292,8 @@ nav {
         font-family: "Martel", serif;
         font-weight: bold; }
       .contact .fieldSet .shadow-drop-2-center .proyectContainer .whappImage {
-        height: 20%;
-        width: 20%; }
+        height: 30%;
+        width: 30%; }
       .contact .fieldSet .shadow-drop-2-center .proyectContainer .proyecto {
         width: 80%;
         height: 80%; }
@@ -311,6 +311,8 @@ nav {
           border-radius: 16px;
           height: 5.5vh;
           margin: 1%;
+          font-family: "Playfair Display", serif;
+          font-size: 1rem;
           font-size: 0.9rem;
           font-family: "Playfair Display", serif; }
           .contact .fieldSet .shadow-drop-2-center .proyectContainer .contactButtons .buttonForm:hover {
@@ -392,11 +394,11 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  font-family: "Martel", serif;
-  font-weight: bold;
   position: relative;
   text-align: center;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  font-family: "Alegreya SC", serif;
+  font-size: 0.9rem; }
   .footer .flexFooter {
     display: flex;
     justify-content: space-around; }
@@ -731,6 +733,8 @@ nav {
       border-radius: 16px;
       height: 5.5vh;
       margin: 1%;
+      font-family: "Playfair Display", serif;
+      font-size: 1rem;
       font-family: "Playfair Display", serif; }
       .shippingFlex .enviosRight div .buttonForm:hover {
         background-color: #c7abba;
@@ -817,6 +821,8 @@ nav {
           border-radius: 16px;
           height: 5.5vh;
           margin: 1%;
+          font-family: "Playfair Display", serif;
+          font-size: 1rem;
           font-size: 0.9rem;
           font-family: "Playfair Display", serif; }
           .contactFormW .fieldSet .contactRow div .contactButtons .buttonForm:hover {

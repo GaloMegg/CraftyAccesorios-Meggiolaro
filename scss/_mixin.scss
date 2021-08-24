@@ -20,6 +20,8 @@
     border-radius: 16px;
     height: 5.5vh;
     margin: 1%;
+    font-family: $buttonFont;
+    font-size: $fontSizeInfo;
     &:hover{
     background-color: $darkerBackground;
     box-shadow: 0px 15px 20px $lighterBackground;
