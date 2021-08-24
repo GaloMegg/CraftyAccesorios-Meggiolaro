@@ -6,6 +6,10 @@
 /*BACKGROUNDS*/
 /*GENERAL FONTS*/
 /*SPECIFIC FONTS*/
+/*links*/
+/*Button*/
+/*listremargin*/
+/*animations*/
 .mainGrid {
   display: grid;
   grid-template-areas: "nav nav nav" "content content content" "slogan slogan slogan" "mainInfo mainInfo mainInfo" "carrousel carrousel carrousel" "contact contact contact" "footer footer footer"; }
@@ -100,39 +104,9 @@ nav {
   font-weight: bold;
   margin-top: 1%;
   text-align: center; }
-  nav .hoverNav:hover .absoluteNav {
-    display: block;
-    position: absolute;
-    text-align: center; }
-  nav .absoluteNav {
-    display: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-    list-style-type: none;
-    background-color: #e7dede; }
-  nav .absoluteNav:hover .product {
-    display: block;
-    position: relative;
-    background-color: #c7abba;
-    padding: 2%;
-    text-align: center;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    margin: 1.5%; }
-  nav .productNav {
-    padding: 5%; }
-  nav .product {
-    display: none; }
-  nav .reMarginedList {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-    list-style-type: none; }
+  nav .blur-out-expand {
+    -webkit-animation: blur-out-expand 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse;
+    animation: blur-out-expand 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse; }
   nav .linksNav {
     color: black;
     text-decoration: none;
@@ -143,10 +117,39 @@ nav {
     color: #e4bbcc;
     border-bottom: 1px solid black;
     border-top: 1px solid black; }
-
-.blur-out-expand {
-  -webkit-animation: blur-out-expand 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse;
-  animation: blur-out-expand 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse; }
+  nav .hoverNav:hover .absoluteNav {
+    display: block;
+    position: absolute;
+    text-align: center; }
+  nav .hoverNav .absoluteNav {
+    display: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    background-color: #e7dede; }
+    nav .hoverNav .absoluteNav .productNav {
+      padding: 5%; }
+      nav .hoverNav .absoluteNav .productNav:hover .reMarginedList {
+        display: block;
+        position: relative; }
+      nav .hoverNav .absoluteNav .productNav .reMarginedList {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+        list-style-type: none;
+        display: none; }
+        nav .hoverNav .absoluteNav .productNav .reMarginedList .product {
+          background-color: #c7abba;
+          padding: 2%;
+          text-align: center;
+          border-bottom: 1px solid black;
+          border-top: 1px solid black;
+          margin: 1.5%; }
 
 @-webkit-keyframes blur-out-expand {
   0% {
