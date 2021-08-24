@@ -18,8 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
     <!-- globalCss -->
     <link rel="icon" href="images/craftyaccslogo .ico">
     <link rel="stylesheet" href="css/styles.css">
@@ -59,8 +59,7 @@
                         </li>
                         <li class="productNav "> Accesorios
                             <ul class="reMarginedList">
-                                <li class="product "><a href="earrings/arosalambre.html"
-                                        class="linksNav">Aros</a>
+                                <li class="product "><a href="earrings/arosalambre.html" class="linksNav">Aros</a>
                                 </li>
                             </ul>
                         </li>
@@ -186,7 +185,7 @@
                         <img src="images/phonestrapname.jpg" class="d-block carrousel__resizeImage"
                             alt="correa de telefono">
                     </div>
-                    
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev" aria-label="botón diapositiva previa">
@@ -220,10 +219,10 @@
                         <input name="email" type="email" id="email" required placeholder="Email"
                             class="shadow-drop-2-center proyecto">
                         <label for="teleoemail">¿Como prefieres que nos contactemos?</label>
-                        <label for="teleoemail">Email</label>
-                        <input name="teleoemail" class="" type="radio" required value="Email">
-                        <label for="teleoemail">Telefono</label>
-                        <input name="teleoemail" class="" type="radio" required value="Telefono">
+                        <label for="emailradio">Email</label>
+                        <input id="emailradio" name="teleoemail" class="radio" type="radio" required value="Email">
+                        <label for="teleradio">Telefono</label>
+                        <input name="teleoemail" class="radio" type="radio" required value="Telefono" id="teleradio">
                         <br>
                         <label for="sexo">Sexo:</label>
                         <select name="sexo" id="sexo" class="shadow-drop-2-center proyecto">
@@ -234,15 +233,15 @@
                             <option value="transgenero">Transgenero</option>
                             <option value="no-binario">No binario</option>
                         </select>
-                        <img src="images/whatsapp.svg"
-                            alt="aceptar tener whatsapp" class="whappImage" for="whatsapp">
-                        <input name="whatsapp" type="checkbox" id="whatsapp" value="whatsapp">
+                        <label for="whatsappsvg">
+                            <img src="images/whatsapp.svg" alt="aceptar tener whatsapp" class="whappImage">
+                        </label>
+                        <input name="whatsapp" type="checkbox" id="whatsappsvg" value="whatsapp">
                     </div>
                     <div class="proyectContainer">
                         <label for="proyecto">Cuentanos tu proyecto</label>
 
-                        <textarea name="protecto" id="proyecto" 
-                            class="shadow-drop-2-center proyecto"></textarea>
+                        <textarea name="protecto" id="proyecto" class="shadow-drop-2-center proyecto"></textarea>
                         <div class="contactButtons">
                             <input type="submit" class="buttonForm " aria-label="enviar">
                             <input type="reset" class="buttonForm " aria-label="restablecer">

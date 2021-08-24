@@ -297,6 +297,8 @@ nav {
       .contact .fieldSet .shadow-drop-2-center .proyectContainer .proyecto {
         width: 80%;
         height: 80%; }
+      .contact .fieldSet .shadow-drop-2-center .proyectContainer .radio {
+        width: 10%; }
     .contact .fieldSet .shadow-drop-2-center .proyectContainer {
       width: 40%; }
       .contact .fieldSet .shadow-drop-2-center .proyectContainer .proyecto {
@@ -373,6 +375,8 @@ nav {
 @media (min-width: 981px) and (max-width: 2400px) {
   .contact .fieldSet .shadow-drop-2-center .proyectContainer h3 {
     font-size: 2rem; }
+  .contact .fieldSet .shadow-drop-2-center .proyectContainer .whappImage {
+    width: 10%; }
   .contact .fieldSet .shadow-drop-2-center .proyectContainer .proyecto, .contact .fieldSet .shadow-drop-2-center .proyectContainer label {
     font-size: 1.2rem; }
   .contact .fieldSet .shadow-drop-2-center .proyectContainer .contactButtons .buttonForm {
@@ -382,6 +386,8 @@ nav {
 @media (min-width: 2401px) and (max-width: 10000px) {
   .contact .fieldSet .shadow-drop-2-center .proyectContainer h3 {
     font-size: 3rem; }
+  .contact .fieldSet .shadow-drop-2-center .proyectContainer .whappImage {
+    width: 5%; }
   .contact .fieldSet .shadow-drop-2-center .proyectContainer .proyecto, .contact .fieldSet .shadow-drop-2-center .proyectContainer label {
     font-size: 2rem; }
   .contact .fieldSet .shadow-drop-2-center .proyectContainer .contactButtons .buttonForm {

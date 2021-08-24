@@ -23,11 +23,11 @@
                 }
             .proyectContainer{
                     width: 40%;     
-                    h3{
-                    text-align: center;
-                    font-size: $fontSizeContact;
-                    font-family: $fontFamily;
-                    font-weight: $fontWeight;}
+                        h3{
+                            text-align: center;
+                            font-size: $fontSizeContact;
+                            font-family: $fontFamily;
+                            font-weight: $fontWeight;}
                         .whappImage{
                             height:30%;
                             width: 30%;
@@ -36,6 +36,9 @@
                             width: 80%;
                             height: 80%;
                         }
+                        .radio{
+                            width: 10%;
+                        } 
             }
             .proyectContainer{
                     width: 40%;
@@ -122,6 +125,9 @@
                     h3{
                         font-size: 2rem;
                     }
+                    .whappImage{
+                        width: 10%;
+                    }
                     .proyecto, label{
                         font-size: 1.2rem;
                     }
@@ -143,6 +149,9 @@
                 .proyectContainer{
                     h3{
                         font-size: 3rem;
+                    }
+                    .whappImage{
+                        width: 5%;
                     }
                     .proyecto, label{
                         font-size: 2rem;
