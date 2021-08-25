@@ -405,9 +405,9 @@ nav {
     font-size: 2rem; } }
 
 .footer {
-  background: linear-gradient(179deg, #c7abba, #ffffff);
+  background: linear-gradient(90deg, #c7abba, #ffffff);
   background-size: 400% 400%;
-  animation: AnimationName 7s ease infinite;
+  animation: footerGradient 7s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -445,7 +445,7 @@ nav {
       font-size: 0.7rem;
       font-weight: bold; }
 
-@keyframes AnimationName {
+@keyframes footerGradient {
   0% {
     background-position: 92% 0%; }
   50% {
