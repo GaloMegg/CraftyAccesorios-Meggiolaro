@@ -7891,7 +7891,7 @@ header {
   header {
     margin-top: 1%; }
     header .mainHeader__mainTitle {
-      font-size: 2rem; } }
+      font-size: 1.6rem; } }
 
 /*4k*/
 @media (min-width: 2401px) and (max-width: 10000px) {
@@ -8119,7 +8119,7 @@ nav {
           background-color: #e4bbcc;
           border: 0.5px solid black;
           border-radius: 16px;
-          height: 5.5vh;
+          height: 10%;
           margin: 1%;
           font-family: "Playfair Display", serif;
           font-size: 1rem;
@@ -8439,7 +8439,7 @@ nav {
       background-color: #e4bbcc;
       border: 0.5px solid black;
       border-radius: 16px;
-      height: 5.5vh;
+      height: 10%;
       margin: 1%;
       font-family: "Playfair Display", serif;
       font-size: 1rem; }
@@ -8533,10 +8533,10 @@ nav {
     align-items: center;
     text-align: center;
     max-width: 50%;
-    padding: 1%; }
+    padding: 1%;
+    font-family: "Martel", serif; }
     .shippingFlex .enviosRight .resizeTitles {
-      font-size: 1.2rem;
-      font-family: "Martel", serif; }
+      font-size: 1.2rem; }
     .shippingFlex .enviosRight div .shippingForm {
       font-family: "Martel", serif;
       width: 40%; }
@@ -8545,7 +8545,7 @@ nav {
       background-color: #c7abba;
       border: 0.5px solid black;
       border-radius: 16px;
-      height: 5.5vh;
+      height: 10%;
       margin: 1%;
       font-family: "Playfair Display", serif;
       font-size: 1rem;
@@ -8633,7 +8633,7 @@ nav {
           background-color: #e4bbcc;
           border: 0.5px solid black;
           border-radius: 16px;
-          height: 5.5vh;
+          height: 10%;
           margin: 1%;
           font-family: "Playfair Display", serif;
           font-size: 1rem;
