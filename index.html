@@ -42,9 +42,10 @@
             </header>
             <!-- finish header -->
             <!-- startsNav -->
-            <nav class="flexRowNav paddingNav">
-                <div class="hoverNav blur-out-expand " aria-hidden="false">Productos
-                    <ul class="flexColumnNav absoluteNav">
+            <nav>
+                <div class="hoverNav blur-out-expand" aria-label="Productos"><a href="#" alt="Productos"
+                        class="linksNav blur-out-expand">Productos</a>
+                    <ul class="absoluteNav">
                         <li class="productNav"> Joyeria de autor
                             <ul class="reMarginedList">
                                 <li class="product"><a href="rings/anillosclay.html" class="linksNav">Anillos
@@ -88,7 +89,7 @@
         </section>
         <!-- finishLandingSection -->
         <!-- catchyPhrase -->
-        <section class="slogan costum-element">
+        <section class="slogan">
             <section class="slogan__catchyPhrase  ">
                 <h2 class="slogan__sloganClass">Crafty, lo lindo de crear</h2>
             </section>
@@ -169,8 +170,7 @@
                         aria-label="diapositiva 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="diapositiva 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="diapositiva 4"></button>
+
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active carrousel__resizeImage">
@@ -201,7 +201,7 @@
         </section>
         <!-- finishCarrousel -->
         <!-- contactForm -->
-        <article class="contact contactForm shadow-drop-center" id="jumpToCatchy">
+        <article class="contact shadow-drop-center" id="jumpToCatchy">
             <Form class="fieldSet" method="POST">
                 <fieldset class="shadow-drop-2-center">
                     <div class="proyectContainer">
@@ -220,9 +220,9 @@
                             class="shadow-drop-2-center proyecto">
                         <label for="teleoemail">¿Como prefieres que nos contactemos?</label>
                         <label for="emailradio">Email</label>
-                        <input id="emailradio" name="teleoemail" class="radio" type="radio" required value="Email">
+                        <input id="emailradio" name="teleoemail" class="radioCheck" type="radio" required value="Email">
                         <label for="teleradio">Telefono</label>
-                        <input name="teleoemail" class="radio" type="radio" required value="Telefono" id="teleradio">
+                        <input name="teleoemail" class="radioCheck" type="radio" required value="Telefono" id="teleradio">
                         <br>
                         <label for="sexo">Sexo:</label>
                         <select name="sexo" id="sexo" class="shadow-drop-2-center proyecto">
@@ -233,10 +233,10 @@
                             <option value="transgenero">Transgenero</option>
                             <option value="no-binario">No binario</option>
                         </select>
-                        <label for="whatsappsvg">
+                        <label for="whatsappsvg" class="whappImage">
                             <img src="images/whatsapp.svg" alt="aceptar tener whatsapp" class="whappImage">
                         </label>
-                        <input name="whatsapp" type="checkbox" id="whatsappsvg" value="whatsapp">
+                        <input name="whatsapp" type="checkbox" id="whatsappsvg" value="whatsapp" class="radioCheck">
                     </div>
                     <div class="proyectContainer">
                         <label for="proyecto">Cuentanos tu proyecto</label>

@@ -8,8 +8,7 @@
         padding: 1%;
         background-image: $backgroundMarmol;
         &:hover{
-            -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @include animationContactForm;
         }
         .shadow-drop-2-center{
             font-size: $fontSizeContactForm;
@@ -18,9 +17,9 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            &:focus{-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                }
+            &:focus{
+                @include animationContactForm;
+            }
             .proyectContainer{
                     width: 40%;     
                         h3{
@@ -29,19 +28,24 @@
                             font-family: $fontFamily;
                             font-weight: $fontWeight;}
                         .whappImage{
-                            height:30%;
-                            width: 30%;
+                            width:50%;
+                            
+                            .whappImage--try{
+
+                                height:100%;
+                                width: 100%;
+                            }
                         }
                         .proyecto{
                             width: 80%;
                             height: 80%;
                         }
-                        .radio{
-                            width: 10%;
+                        .radioCheck{
+                                height: 2vh;
+                                border: 0px;
+                                width: 20%;
+                            
                         } 
-            }
-            .proyectContainer{
-                    width: 40%;
                         .proyecto{
                             width: 100%;
                             height: 80%;
@@ -54,10 +58,10 @@
                                 font-family: $buttonFont;
                             }
                         }
+                    }
+                }
             }
-
-    
-    }}}
+        }
 @-webkit-keyframes shadow-drop-2-center {
     0% {
     -webkit-transform: translateZ(0);
@@ -126,7 +130,13 @@
                         font-size: 2rem;
                     }
                     .whappImage{
-                        width: 10%;
+                        width:30%;
+                        
+                        .whappImage--try{
+
+                            height:100%;
+                            width: 100%;
+                        }
                     }
                     .proyecto, label{
                         font-size: 1.2rem;
@@ -151,7 +161,13 @@
                         font-size: 3rem;
                     }
                     .whappImage{
-                        width: 5%;
+                        width:30%;
+                        
+                        .whappImage--try{
+
+                            height:100%;
+                            width: 100%;
+                        }
                     }
                     .proyecto, label{
                         font-size: 2rem;
