@@ -28,13 +28,7 @@
                             font-family: $fontFamily;
                             font-weight: $fontWeight;}
                         .whappImage{
-                            width:50%;
-                            
-                            .whappImage--try{
-
-                                height:100%;
-                                width: 100%;
-                            }
+                            width: 50%;
                         }
                         .proyecto{
                             width: 80%;
@@ -121,29 +115,23 @@
         }
         }
 /*PC's*/
-@media (min-width: 981px) and (max-width:2400px){
+@media (min-width: 781px) and (max-width:2400px){
     .contact{
         .fieldSet{
             .shadow-drop-2-center{
                 .proyectContainer{
                     h3{
-                        font-size: 2rem;
+                        font-size: 1rem;
                     }
                     .whappImage{
                         width:30%;
-                        
-                        .whappImage--try{
-
-                            height:100%;
-                            width: 100%;
-                        }
                     }
                     .proyecto, label{
-                        font-size: 1.2rem;
+                        font-size: 0.9rem;
                     }
                     .contactButtons{
                         .buttonForm{
-                            font-size: 1.2rem;
+                            font-size: 1rem;
                         }
                     }
                 }
@@ -162,12 +150,6 @@
                     }
                     .whappImage{
                         width:30%;
-                        
-                        .whappImage--try{
-
-                            height:100%;
-                            width: 100%;
-                        }
                     }
                     .proyecto, label{
                         font-size: 2rem;

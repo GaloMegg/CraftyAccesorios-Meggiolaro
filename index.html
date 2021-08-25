@@ -22,10 +22,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
     <!-- Icon -->
     <link rel="icon" href="images/craftyaccslogo .ico">
-    <!-- globalCss -->
-    <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap 5.0 -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- globalCss -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -162,14 +162,14 @@
         <!-- finishGeneralInfo -->
         <!-- carrousel -->
         <section class="carrousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel carousel-primary slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="diapositiva 1"></button>
+                        class="active bg-primary" aria-current="true" aria-label="diapositiva 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="diapositiva 2"></button>
+                    class="bg-primary" aria-label="diapositiva 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="diapositiva 3"></button>
+                    class="bg-primary" aria-label="diapositiva 3"></button>
 
                 </div>
                 <div class="carousel-inner">
@@ -187,14 +187,14 @@
                     </div>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev" aria-label="botón diapositiva previa">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                    <span class="visually-hidden ">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next" aria-label="botón diapositiva siguiente">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon " aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -219,6 +219,7 @@
                         <input name="email" type="email" id="email" required placeholder="Email"
                             class="shadow-drop-2-center proyecto">
                         <label for="teleoemail">¿Como prefieres que nos contactemos?</label>
+                        <br>
                         <label for="emailradio">Email</label>
                         <input id="emailradio" name="teleoemail" class="radioCheck" type="radio" required value="Email">
                         <label for="teleradio">Telefono</label>
