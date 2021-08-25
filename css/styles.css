@@ -8182,11 +8182,11 @@ nav {
 /*PC's*/
 @media (min-width: 781px) and (max-width: 2400px) {
   .contact .fieldSet .shadow-drop-2-center .proyectContainer h3, .contact .fieldSet .shadow-drop-2-center .proyectContainer .h3 {
-    font-size: 1rem; }
+    font-size: 1.6rem; }
   .contact .fieldSet .shadow-drop-2-center .proyectContainer .whappImage {
     width: 30%; }
   .contact .fieldSet .shadow-drop-2-center .proyectContainer .proyecto, .contact .fieldSet .shadow-drop-2-center .proyectContainer label {
-    font-size: 0.9rem; }
+    font-size: 1.1rem; }
   .contact .fieldSet .shadow-drop-2-center .proyectContainer .contactButtons .buttonForm {
     font-size: 1rem; } }
 
